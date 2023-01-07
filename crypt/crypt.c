@@ -171,6 +171,7 @@ int rsa_set_crypt_param_private(rsa_crypt_param* _param, unsigned char* _key)
     }
 
     _param->padding = RSA_PKCS1_PADDING;
+    //_param->padding = RSA_PKCS1_OAEP_PADDING;
 
     return ERR_SUCCESS;
 }
@@ -199,6 +200,7 @@ int rsa_set_crypt_param_public(rsa_crypt_param* _param, unsigned char* _key)
     }
 
     _param->padding = RSA_PKCS1_PADDING;
+    //_param->padding = RSA_PKCS1_OAEP_PADDING;
 
     return ERR_SUCCESS;
 }
