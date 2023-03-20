@@ -92,7 +92,7 @@ typedef struct _rsa_crypt_param {
 } rsa_crypt_param;
 
 
-void mm_rsa_generate_pair_key_in_string(unsigned char* _private_key, char* _public_key, int _bits)
+void mm_rsa_generate_pair_key_in_string(unsigned char* _private_key, unsigned char* _public_key, int _bits)
 {
     BIGNUM* bne = BN_new();
     BN_set_word(bne, RSA_F4);

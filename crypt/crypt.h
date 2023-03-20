@@ -44,7 +44,7 @@ extern "C" {
     CRYPT_RSA int mm_write_text_file(const char* _filepath, unsigned char* _text, size_t _length);
     CRYPT_RSA int mm_read_text_file(unsigned char* _text, size_t _length, const char* _filepath);
 
-    CRYPT_RSA void mm_rsa_generate_pair_key_in_string(unsigned char* _private_key, char* _public_key, int _bits);
+    CRYPT_RSA void mm_rsa_generate_pair_key_in_string(unsigned char* _private_key, unsigned char* _public_key, int _bits);
     CRYPT_RSA void mm_rsa_generate_pair_key_in_file(char* _filepath_private_key, char* _filepath_public_key, int _bits);
 
     CRYPT_RSA int mm_rsa_encrypt_public_with_key_string(unsigned char* _crypt, unsigned char* _plain, unsigned char* _key, int _bits);

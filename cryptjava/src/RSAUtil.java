@@ -53,6 +53,7 @@ public class RSAUtil {
             .replaceAll(System.lineSeparator(), "")
             .replaceAll("\r\n", "")
             .replaceAll("\n", "")
+            .replaceAll("\r", "")
             .replace("-----END PRIVATE KEY-----", "");
 
         byte[] encodedKey = base64Decode(privateKeyPEM.getBytes());
@@ -73,6 +74,7 @@ public class RSAUtil {
             .replaceAll(System.lineSeparator(), "")
             .replaceAll("\r\n", "")
             .replaceAll("\n", "")
+            .replaceAll("\r", "")
             .replace("-----END PUBLIC KEY-----", "");
 
         byte[] encodedKey = base64Decode(publicKeyPEM.getBytes());
